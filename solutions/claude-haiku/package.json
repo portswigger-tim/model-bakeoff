@@ -1,0 +1,16 @@
+{
+  "name": "snip",
+  "version": "1.0.0",
+  "description": "A small URL-shortener HTTP service",
+  "type": "module",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/index.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"test/*.test.js\""
+  }
+}

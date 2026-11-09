@@ -1,0 +1,6 @@
+{"time":"2026-11-09T11:22:08.827395Z","level":"INFO","msg":"listening","addr":"127.0.0.1:18080","base_url":"http://127.0.0.1:18080","db":"<tmpdir>/snip.db"}
+{"time":"2026-11-09T11:22:08.837659Z","level":"INFO","msg":"request","method":"GET","path":"/healthz","status":200,"duration_ms":0,"remote":"127.0.0.1:55365"}
+{"time":"2026-11-09T11:22:08.893343Z","level":"INFO","msg":"request","method":"GET","path":"/api/links/My_custom-1","status":200,"duration_ms":0,"remote":"127.0.0.1:55366"}
+{"time":"2026-11-09T11:22:08.894356Z","level":"INFO","msg":"request","method":"GET","path":"/6cjku7iFwL","status":302,"duration_ms":0,"remote":"127.0.0.1:55367"}
+{"time":"2026-11-09T11:22:08.894752Z","level":"INFO","msg":"request","method":"GET","path":"/abc","status":404,"duration_ms":0,"remote":"127.0.0.1:55368"}
+{"time":"2026-11-09T11:22:08.921974Z","level":"INFO","msg":"shutting down"}

@@ -1,0 +1,6 @@
+
+> snip@1.0.0 start
+> node --disable-warning=ExperimentalWarning src/index.js
+
+snip listening on port 18080, data in <tmpdir>/snip.db
+SIGTERM received, shutting down

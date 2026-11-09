@@ -1,0 +1,72 @@
+test_authentication (test_snip.SnipTests.test_authentication) ... 127.0.0.1 - - [09/Nov/2026 11:23:01] "POST /api/links HTTP/1.1" 401 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "DELETE /api/links/example HTTP/1.1" 401 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "POST /api/links HTTP/1.1" 401 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "DELETE /api/links/example HTTP/1.1" 401 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "POST /api/links HTTP/1.1" 401 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "DELETE /api/links/example HTTP/1.1" 401 -
+ok
+test_concurrent_visits (test_snip.SnipTests.test_concurrent_visits) ... 127.0.0.1 - - [09/Nov/2026 11:23:01] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:01] "GET /api/links/example HTTP/1.1" 200 -
+ok
+test_full_lifecycle_and_persistence (test_snip.SnipTests.test_full_lifecycle_and_persistence) ... 127.0.0.1 - - [09/Nov/2026 11:23:02] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:23:02] "POST /api/links HTTP/1.1" 409 -
+127.0.0.1 - - [09/Nov/2026 11:23:02] "GET /example HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:23:02] "GET /api/links/example HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2026 11:23:02] "GET /api/links/example HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2026 11:23:02] "DELETE /api/links/example HTTP/1.1" 204 -
+127.0.0.1 - - [09/Nov/2026 11:23:02] "GET /example HTTP/1.1" 404 -
+127.0.0.1 - - [09/Nov/2026 11:23:02] "GET /api/links/example HTTP/1.1" 404 -
+127.0.0.1 - - [09/Nov/2026 11:23:02] "DELETE /api/links/example HTTP/1.1" 404 -
+127.0.0.1 - - [09/Nov/2026 11:23:02] "GET /healthz HTTP/1.1" 200 -
+ok
+test_generated_slug_retries_collisions (test_snip.SnipTests.test_generated_slug_retries_collisions) ... 127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 201 -
+ok
+test_invalid_inputs (test_snip.SnipTests.test_invalid_inputs) ... 127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:23:03] "POST /api/links HTTP/1.1" 400 -
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 3.087s
+
+OK
+exit=0

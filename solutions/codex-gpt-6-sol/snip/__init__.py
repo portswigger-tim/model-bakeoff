@@ -1,0 +1,1 @@
+"""Local URL shortener."""

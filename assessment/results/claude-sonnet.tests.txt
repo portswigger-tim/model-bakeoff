@@ -1,0 +1,4 @@
+?   	github.com/example/snip/cmd/snip	[no test files]
+ok  	github.com/example/snip/internal/server	1.266s
+ok  	github.com/example/snip/internal/store	1.182s
+exit=0

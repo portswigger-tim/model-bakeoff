@@ -1,0 +1,5 @@
+?   	snip/cmd/snip	[no test files]
+ok  	snip/internal/config	1.074s
+ok  	snip/internal/server	1.260s
+ok  	snip/internal/store	1.193s
+exit=0

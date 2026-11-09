@@ -1,0 +1,102 @@
+test_concurrent_visits_are_not_lost (test_snip.SnipHTTPTests.test_concurrent_visits_are_not_lost) ... 127.0.0.1 - - [09/Nov/2026 11:22:21] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:21] "GET /popular HTTP/1.1" 302 -
+ok
+test_create_custom_link_and_read_metadata (test_snip.SnipHTTPTests.test_create_custom_link_and_read_metadata) ... 127.0.0.1 - - [09/Nov/2026 11:22:22] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:22] "GET /api/links/My_link-1 HTTP/1.1" 200 -
+ok
+test_data_persists_when_store_is_reopened (test_snip.SnipHTTPTests.test_data_persists_when_store_is_reopened) ... 127.0.0.1 - - [09/Nov/2026 11:22:22] "POST /api/links HTTP/1.1" 201 -
+ok
+test_delete_removes_link_and_unknown_delete_is_404 (test_snip.SnipHTTPTests.test_delete_removes_link_and_unknown_delete_is_404) ... 127.0.0.1 - - [09/Nov/2026 11:22:23] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:23] "DELETE /api/links/remove-me HTTP/1.1" 204 -
+127.0.0.1 - - [09/Nov/2026 11:22:23] "GET /remove-me HTTP/1.1" 404 -
+127.0.0.1 - - [09/Nov/2026 11:22:23] "DELETE /api/links/remove-me HTTP/1.1" 404 -
+ok
+test_duplicate_custom_slug_returns_conflict_without_replacing_link (test_snip.SnipHTTPTests.test_duplicate_custom_slug_returns_conflict_without_replacing_link) ... 127.0.0.1 - - [09/Nov/2026 11:22:23] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:23] "POST /api/links HTTP/1.1" 409 -
+ok
+test_generated_slugs_are_url_safe_and_unique (test_snip.SnipHTTPTests.test_generated_slugs_are_url_safe_and_unique) ... 127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:24] "POST /api/links HTTP/1.1" 201 -
+ok
+test_health (test_snip.SnipHTTPTests.test_health) ... 127.0.0.1 - - [09/Nov/2026 11:22:24] "GET /healthz HTTP/1.1" 200 -
+ok
+test_invalid_inputs_return_json_400 (test_snip.SnipHTTPTests.test_invalid_inputs_return_json_400) ... 127.0.0.1 - - [09/Nov/2026 11:22:25] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:25] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:25] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:25] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:25] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:25] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:25] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:25] "POST /api/links HTTP/1.1" 400 -
+ok
+test_malformed_and_non_object_json_return_400 (test_snip.SnipHTTPTests.test_malformed_and_non_object_json_return_400) ... 127.0.0.1 - - [09/Nov/2026 11:22:25] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:25] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:25] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:25] "POST /api/links HTTP/1.1" 400 -
+ok
+test_redirect_counts_each_visit_and_unknown_is_404 (test_snip.SnipHTTPTests.test_redirect_counts_each_visit_and_unknown_is_404) ... 127.0.0.1 - - [09/Nov/2026 11:22:26] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:26] "GET /visit-me HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:26] "GET /api/links/visit-me HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2026 11:22:26] "GET /visit-me HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:26] "GET /api/links/visit-me HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2026 11:22:26] "GET /visit-me HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:26] "GET /api/links/visit-me HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2026 11:22:26] "GET /not-found HTTP/1.1" 404 -
+ok
+test_write_endpoints_require_the_configured_bearer_token (test_snip.SnipHTTPTests.test_write_endpoints_require_the_configured_bearer_token) ... 127.0.0.1 - - [09/Nov/2026 11:22:26] "POST /api/links HTTP/1.1" 401 -
+127.0.0.1 - - [09/Nov/2026 11:22:26] "POST /api/links HTTP/1.1" 401 -
+127.0.0.1 - - [09/Nov/2026 11:22:26] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:26] "DELETE /api/links/delete-me HTTP/1.1" 401 -
+ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 5.659s
+
+OK
+exit=0

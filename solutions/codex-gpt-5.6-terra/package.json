@@ -1,0 +1,14 @@
+{
+  "name": "snip",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small persistent URL-shortener HTTP service",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

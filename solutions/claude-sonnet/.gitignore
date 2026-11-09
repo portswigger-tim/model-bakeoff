@@ -1,0 +1,9 @@
+# build / data
+/bin/
+/data/
+*.db
+*.db-shm
+*.db-wal
+.env
+*.test
+*.out

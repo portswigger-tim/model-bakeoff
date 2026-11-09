@@ -1,0 +1,17 @@
+# Dependencies (none at runtime, but keep the usual suspects out)
+node_modules/
+
+# Local data: SQLite database and its WAL/SHM side files
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Environment files may hold SNIP_API_TOKEN
+.env
+.env.*
+
+# Tooling output
+coverage/
+*.log
+.DS_Store

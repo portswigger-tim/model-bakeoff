@@ -1,0 +1,51 @@
+# Minimal safety nets. One-time setup per clone:
+#   pre-commit install
+#
+# solutions/ and assessment/results/ are the models' output and captured logs,
+# kept byte-for-byte, so the formatting fixers skip them. The secret, key,
+# large-file and local-path checks still cover everything.
+#
+# Revs are pinned to commit SHAs; `pre-commit autoupdate --freeze` bumps them.
+default_install_hook_types: [pre-commit, pre-push, commit-msg]
+default_stages: [pre-commit, pre-push]
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: 3e8a8703264a2f4a69428a0aa4dcb512790b2c8c  # frozen: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+        exclude: ^(solutions|assessment/results)/
+      - id: end-of-file-fixer
+        exclude: ^(solutions|assessment/results)/
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-json
+      - id: check-added-large-files
+        args: [--maxkb=1024]
+      - id: detect-private-key
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: 83d9cd684c87d95d656c1458ef04895a7f1cbd8e  # frozen: v8.30.1
+    hooks:
+      - id: gitleaks
+
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: a6564f5d57444e123433a5c9af733e3975c77229  # frozen: v0.11.0.1-1
+    hooks:
+      - id: shellcheck
+
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: 81d3af62ea96a1f69f0cfa8745f253d3c4740896  # frozen: v4.5.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+
+  - repo: local
+    hooks:
+      # Machine-specific paths must never reach a shared repo.
+      - id: no-local-paths
+        name: no absolute local paths
+        language: pygrep
+        entry: '(/Users/[A-Za-z]|/home/[a-z][a-z0-9_-]*/|/private/tmp/|/var/folders/)'
+        exclude: '^(.*lock.*|\.pre-commit-config\.yaml)$'

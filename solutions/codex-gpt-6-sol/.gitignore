@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+target/
+dist/
+build/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+.snip-test-*/
+.DS_Store

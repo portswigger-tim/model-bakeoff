@@ -1,0 +1,39 @@
+test_entry_point_rejects_invalid_port (tests.test_server.ServerTests.test_entry_point_rejects_invalid_port) ... ok
+test_entry_point_rejects_missing_token (tests.test_server.ServerTests.test_entry_point_rejects_missing_token) ... ok
+test_http_lifecycle_survives_process_restart (tests.test_server.ServerTests.test_http_lifecycle_survives_process_restart) ... ok
+test_environment_configuration (tests.test_service.ConfigurationTests.test_environment_configuration) ... ok
+test_invalid_public_origin (tests.test_service.ConfigurationTests.test_invalid_public_origin) ... ok
+test_invalid_tokens (tests.test_service.ConfigurationTests.test_invalid_tokens) ... ok
+test_missing_token_fails_closed (tests.test_service.ConfigurationTests.test_missing_token_fails_closed) ... ok
+test_auth_precedes_parsing (tests.test_service.ServiceTests.test_auth_precedes_parsing) ... ok
+test_auth_required_for_both_write_endpoints (tests.test_service.ServiceTests.test_auth_required_for_both_write_endpoints) ... ok
+test_concurrent_custom_creation_has_one_winner (tests.test_service.ServiceTests.test_concurrent_custom_creation_has_one_winner) ... ok
+test_concurrent_visits_are_not_lost (tests.test_service.ServiceTests.test_concurrent_visits_are_not_lost) ... ok
+test_create_returns_contract_and_utc_timestamp (tests.test_service.ServiceTests.test_create_returns_contract_and_utc_timestamp) ... ok
+test_generated_collision_exhaustion_is_bounded (tests.test_service.ServiceTests.test_generated_collision_exhaustion_is_bounded) ... ok
+test_generated_collision_retries_without_overwriting (tests.test_service.ServiceTests.test_generated_collision_retries_without_overwriting) ... ok
+test_generated_slugs_are_url_safe_and_distinct (tests.test_service.ServiceTests.test_generated_slugs_are_url_safe_and_distinct) ... ok
+test_head_does_not_count_a_visit (tests.test_service.ServiceTests.test_head_does_not_count_a_visit) ... ok
+test_health_is_public (tests.test_service.ServiceTests.test_health_is_public) ... ok
+test_host_header_cannot_poison_short_url (tests.test_service.ServiceTests.test_host_header_cannot_poison_short_url) ... ok
+test_international_domain_can_be_redirected (tests.test_service.ServiceTests.test_international_domain_can_be_redirected) ... ok
+test_invalid_json_and_nonobject_bodies (tests.test_service.ServiceTests.test_invalid_json_and_nonobject_bodies) ... ok
+test_invalid_slugs (tests.test_service.ServiceTests.test_invalid_slugs) ... ok
+test_invalid_unicode_url_is_a_client_error (tests.test_service.ServiceTests.test_invalid_unicode_url_is_a_client_error) ... ok
+test_invalid_urls (tests.test_service.ServiceTests.test_invalid_urls) ... ok
+test_malformed_hostnames_are_rejected_before_storage (tests.test_service.ServiceTests.test_malformed_hostnames_are_rejected_before_storage) ... ok
+test_metadata_public_redirect_count_delete_lifecycle (tests.test_service.ServiceTests.test_metadata_public_redirect_count_delete_lifecycle) ... ok
+test_new_database_is_private (tests.test_service.ServiceTests.test_new_database_is_private) ... ok
+test_oversized_request_is_rejected (tests.test_service.ServiceTests.test_oversized_request_is_rejected) ... ok
+test_persistence_across_new_application_instances (tests.test_service.ServiceTests.test_persistence_across_new_application_instances) ... ok
+test_slug_boundaries_case_sensitivity_and_duplicate (tests.test_service.ServiceTests.test_slug_boundaries_case_sensitivity_and_duplicate) ... ok
+test_sql_injection_input_is_data (tests.test_service.ServiceTests.test_sql_injection_input_is_data) ... ok
+test_storage_failure_does_not_expose_details (tests.test_service.ServiceTests.test_storage_failure_does_not_expose_details) ... ok
+test_unknown_routes_and_methods_return_json (tests.test_service.ServiceTests.test_unknown_routes_and_methods_return_json) ... ok
+test_valid_urls_and_maximum_length (tests.test_service.ServiceTests.test_valid_urls_and_maximum_length) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.870s
+
+OK
+exit=0

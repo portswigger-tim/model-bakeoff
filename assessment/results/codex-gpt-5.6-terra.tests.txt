@@ -1,0 +1,81 @@
+
+> snip@1.0.0 test
+> node --test
+
+TAP version 13
+# Subtest: health endpoint responds successfully
+ok 1 - health endpoint responds successfully
+  ---
+  duration_ms: 14.449375
+  type: 'test'
+  ...
+# Subtest: creates a custom short link and exposes its metadata
+ok 2 - creates a custom short link and exposes its metadata
+  ---
+  duration_ms: 8.762625
+  type: 'test'
+  ...
+# Subtest: generates URL-safe unique slugs
+ok 3 - generates URL-safe unique slugs
+  ---
+  duration_ms: 5.365166
+  type: 'test'
+  ...
+# Subtest: rejects missing or invalid authentication for writes
+ok 4 - rejects missing or invalid authentication for writes
+  ---
+  duration_ms: 3.523125
+  type: 'test'
+  ...
+# Subtest: validates target URLs and custom slugs
+ok 5 - validates target URLs and custom slugs
+  ---
+  duration_ms: 6.917
+  type: 'test'
+  ...
+# Subtest: handles malformed JSON and a prototype-like valid slug safely
+ok 6 - handles malformed JSON and a prototype-like valid slug safely
+  ---
+  duration_ms: 4.0535
+  type: 'test'
+  ...
+# Subtest: reports duplicate slugs as a conflict
+ok 7 - reports duplicate slugs as a conflict
+  ---
+  duration_ms: 2.376708
+  type: 'test'
+  ...
+# Subtest: redirects and increments visits
+ok 8 - redirects and increments visits
+  ---
+  duration_ms: 4.113917
+  type: 'test'
+  ...
+# Subtest: deletes only with authorization and returns 404 thereafter
+ok 9 - deletes only with authorization and returns 404 thereafter
+  ---
+  duration_ms: 3.112542
+  type: 'test'
+  ...
+# Subtest: keeps links and visits after a store is recreated
+ok 10 - keeps links and visits after a store is recreated
+  ---
+  duration_ms: 2.849834
+  type: 'test'
+  ...
+# Subtest: uses the configured public base URL in responses
+ok 11 - uses the configured public base URL in responses
+  ---
+  duration_ms: 2.534375
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 108.13125
+exit=0

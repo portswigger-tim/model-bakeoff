@@ -1,0 +1,41 @@
+test_create_custom_slug_metadata_redirect_and_visits (test_server.SnipHTTPTests.test_create_custom_slug_metadata_redirect_and_visits) ... 127.0.0.1 - - [09/Nov/2026 11:22:40] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:40] "GET /api/links/docs_1 HTTP/1.1" 200 -
+127.0.0.1 - - [09/Nov/2026 11:22:40] "GET /docs_1 HTTP/1.1" 302 -
+127.0.0.1 - - [09/Nov/2026 11:22:40] "GET /api/links/docs_1 HTTP/1.1" 200 -
+ok
+test_data_survives_database_reinitialization (test_server.SnipHTTPTests.test_data_survives_database_reinitialization) ... 127.0.0.1 - - [09/Nov/2026 11:22:41] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:41] "GET /api/links/persistent HTTP/1.1" 200 -
+ok
+test_generated_slug_and_collision (test_server.SnipHTTPTests.test_generated_slug_and_collision) ... 127.0.0.1 - - [09/Nov/2026 11:22:41] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:41] "POST /api/links HTTP/1.1" 409 -
+ok
+test_health (test_server.SnipHTTPTests.test_health) ... 127.0.0.1 - - [09/Nov/2026 11:22:42] "GET /healthz HTTP/1.1" 200 -
+ok
+test_invalid_urls_and_slugs_return_json_400 (test_server.SnipHTTPTests.test_invalid_urls_and_slugs_return_json_400) ... 127.0.0.1 - - [09/Nov/2026 11:22:42] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:42] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:42] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:42] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:42] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:42] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:42] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:42] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:42] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:43] "POST /api/links HTTP/1.1" 400 -
+ok
+test_malformed_json_unknown_routes_and_missing_links (test_server.SnipHTTPTests.test_malformed_json_unknown_routes_and_missing_links) ... 127.0.0.1 - - [09/Nov/2026 11:22:43] "POST /api/links HTTP/1.1" 400 -
+127.0.0.1 - - [09/Nov/2026 11:22:43] "GET /api/links/missing HTTP/1.1" 404 -
+127.0.0.1 - - [09/Nov/2026 11:22:43] "GET /unknown HTTP/1.1" 404 -
+127.0.0.1 - - [09/Nov/2026 11:22:43] "DELETE /api/links/missing HTTP/1.1" 404 -
+ok
+test_write_endpoints_require_correct_token (test_server.SnipHTTPTests.test_write_endpoints_require_correct_token) ... 127.0.0.1 - - [09/Nov/2026 11:22:44] "POST /api/links HTTP/1.1" 401 -
+127.0.0.1 - - [09/Nov/2026 11:22:44] "POST /api/links HTTP/1.1" 401 -
+127.0.0.1 - - [09/Nov/2026 11:22:44] "POST /api/links HTTP/1.1" 201 -
+127.0.0.1 - - [09/Nov/2026 11:22:44] "DELETE /api/links/remove-me HTTP/1.1" 401 -
+127.0.0.1 - - [09/Nov/2026 11:22:44] "DELETE /api/links/remove-me HTTP/1.1" 204 -
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.728s
+
+OK
+exit=0

@@ -1,0 +1,123 @@
+{
+ "claude-haiku": {
+  "anon": "S01",
+  "correctness": 5,
+  "architecture": 5,
+  "code_quality": 4.5,
+  "security": 4.5,
+  "tests": 4,
+  "docs_operability": 4.5,
+  "total": 92.0,
+  "usd": 0.0699
+ },
+ "codex-gpt-6.1-terra": {
+  "anon": "S02",
+  "correctness": 4.5,
+  "architecture": 4,
+  "code_quality": 4,
+  "security": 4,
+  "tests": 4,
+  "docs_operability": 4,
+  "total": 82.0,
+  "usd": 0.0606
+ },
+ "claude-sonnet": {
+  "anon": "S03",
+  "correctness": 4.5,
+  "architecture": 4.5,
+  "code_quality": 4.5,
+  "security": 4.5,
+  "tests": 4,
+  "docs_operability": 4,
+  "total": 87.5,
+  "usd": 0.3491
+ },
+ "codex-gpt-6.1-sol": {
+  "anon": "S04",
+  "correctness": 5,
+  "architecture": 4.5,
+  "code_quality": 4.5,
+  "security": 4.5,
+  "tests": 5,
+  "docs_operability": 4.5,
+  "total": 93.5,
+  "usd": 0.3323
+ },
+ "codex-gpt-6-sol": {
+  "anon": "S05",
+  "correctness": 5,
+  "architecture": 4,
+  "code_quality": 4,
+  "security": 4,
+  "tests": 4,
+  "docs_operability": 4,
+  "total": 84.0,
+  "usd": 0.3354
+ },
+ "codex-gpt-5.6-luna": {
+  "anon": "S06",
+  "correctness": 4.5,
+  "architecture": 4,
+  "code_quality": 4,
+  "security": 3.5,
+  "tests": 3,
+  "docs_operability": 3.5,
+  "total": 75.5,
+  "usd": 0.0318
+ },
+ "codex-gpt-6-luna": {
+  "anon": "S07",
+  "correctness": 4,
+  "architecture": 3.5,
+  "code_quality": 4,
+  "security": 4,
+  "tests": 3,
+  "docs_operability": 3.5,
+  "total": 74.5,
+  "usd": 0.0151
+ },
+ "claude-fable": {
+  "anon": "S08",
+  "correctness": 5,
+  "architecture": 4.5,
+  "code_quality": 4.5,
+  "security": 4,
+  "tests": 4,
+  "docs_operability": 4.5,
+  "total": 88.0,
+  "usd": 0.3274
+ },
+ "codex-gpt-5.6-terra": {
+  "anon": "S09",
+  "correctness": 4,
+  "architecture": 3.5,
+  "code_quality": 4,
+  "security": 3,
+  "tests": 3,
+  "docs_operability": 3.5,
+  "total": 69.5,
+  "usd": 0.3367
+ },
+ "claude-opus": {
+  "anon": "S10",
+  "correctness": 4.5,
+  "architecture": 5,
+  "code_quality": 4.5,
+  "security": 4.5,
+  "tests": 4.5,
+  "docs_operability": 5,
+  "total": 92.5,
+  "usd": 1.4593
+ },
+ "codex-gpt-5.6-sol": {
+  "anon": "S11",
+  "correctness": 4,
+  "architecture": 4,
+  "code_quality": 4.5,
+  "security": 4,
+  "tests": 3.5,
+  "docs_operability": 4,
+  "total": 80.0,
+  "usd": 0.7303
+ }
+}

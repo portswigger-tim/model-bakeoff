@@ -1,0 +1,17 @@
+# Build output
+/bin/
+
+# Local data (SQLite database and WAL/SHM files)
+/data/
+*.db
+*.db-wal
+*.db-shm
+
+# Local environment / secrets
+.env
+.env.*
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,7 @@
+# Placeholder tokens in entrant READMEs and a Go test fixture; none are real secrets.
+solutions/claude-opus/internal/config/config_test.go:generic-api-key:12
+solutions/codex-gpt-5.6-luna/README.md:curl-auth-header:29
+solutions/codex-gpt-5.6-luna/README.md:curl-auth-header:33
+solutions/codex-gpt-6-luna/README.md:curl-auth-header:38
+solutions/codex-gpt-5.6-sol/README.md:curl-auth-header:49
+solutions/codex-gpt-5.6-sol/README.md:curl-auth-header:53

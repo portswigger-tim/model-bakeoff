@@ -1,0 +1,51 @@
+{"id": "healthz_200", "ok": true, "detail": "200"}
+{"id": "post_no_auth_401", "ok": true, "detail": "401"}
+{"id": "post_bad_token_401", "ok": true, "detail": "401"}
+{"id": "post_non_bearer_401", "ok": true, "detail": "401"}
+{"id": "create_generated_201", "ok": true, "detail": "201 {'slug': 'ObiMmYYAnF06', 'url': 'https://example.com/generated?q=1#frag', 'short_url': 'http://127.0.0.1:18080/ObiMmYYAnF06', 'created_at': '2026-11-09T11:22:45Z'}"}
+{"id": "generated_slug_charset_len", "ok": true, "detail": "ObiMmYYAnF06"}
+{"id": "short_url_ends_with_slug", "ok": true, "detail": "http://127.0.0.1:18080/ObiMmYYAnF06"}
+{"id": "generated_slugs_unique", "ok": true, "detail": "25"}
+{"id": "create_custom_201", "ok": true, "detail": "201 {'slug': 'My_custom-1', 'url': 'https://example.com/custom', 'short_url': 'http://127.0.0.1:18080/My_custom-1', 'created_at': '2026-11-09T11:22:45Z'}"}
+{"id": "duplicate_slug_409", "ok": true, "detail": "409"}
+{"id": "reject_javascript_scheme_400", "ok": true, "detail": "400"}
+{"id": "reject_data_scheme_400", "ok": true, "detail": "400"}
+{"id": "reject_ftp_scheme_400", "ok": true, "detail": "400"}
+{"id": "reject_relative_url_400", "ok": true, "detail": "400"}
+{"id": "reject_no_host_400", "ok": true, "detail": "400"}
+{"id": "reject_crlf_injection_400", "ok": true, "detail": "400"}
+{"id": "reject_too_long_2049_400", "ok": true, "detail": "400"}
+{"id": "reject_empty_400", "ok": true, "detail": "400"}
+{"id": "reject_url_not_string_400", "ok": true, "detail": "400"}
+{"id": "reject_url_null_400", "ok": true, "detail": "400"}
+{"id": "reject_missing_url_400", "ok": true, "detail": "400"}
+{"id": "reject_malformed_json_400", "ok": true, "detail": "400"}
+{"id": "reject_json_array_400", "ok": true, "detail": "400"}
+{"id": "accept_exactly_2048_201", "ok": true, "detail": "201"}
+{"id": "accept_uppercase_scheme_201", "ok": true, "detail": "201"}
+{"id": "reject_slug_too_short_400", "ok": true, "detail": "400"}
+{"id": "reject_slug_too_long_400", "ok": true, "detail": "400"}
+{"id": "reject_slug_dot_400", "ok": true, "detail": "400"}
+{"id": "reject_slug_slash_400", "ok": true, "detail": "400"}
+{"id": "reject_slug_space_400", "ok": true, "detail": "400"}
+{"id": "reject_slug_unicode_400", "ok": true, "detail": "400"}
+{"id": "reject_slug_encoded_400", "ok": true, "detail": "400"}
+{"id": "accept_slug_len3_201", "ok": true, "detail": "201"}
+{"id": "accept_slug_len32_201", "ok": true, "detail": "201"}
+{"id": "reject_slug_not_string_400", "ok": true, "detail": "400"}
+{"id": "huge_body_4xx_not_5xx", "ok": true, "detail": "400"}
+{"id": "redirect_302_location", "ok": true, "detail": "302 https://example.com/custom"}
+{"id": "metadata_visits_2", "ok": true, "detail": "200 {'slug': 'My_custom-1', 'url': 'https://example.com/custom', 'created_at': '2026-11-09T11:22:45Z', 'visits': 2}"}
+{"id": "metadata_fields", "ok": false, "detail": "{'slug': 'My_custom-1', 'url': 'https://example.com/custom', 'created_at': '2026-11-09T11:22:45Z', 'visits': 2}"}
+{"id": "concurrent_visits_32", "ok": true, "detail": "32"}
+{"id": "redirect_unknown_404", "ok": true, "detail": "404"}
+{"id": "metadata_unknown_404_json", "ok": true, "detail": "404"}
+{"id": "delete_no_auth_401", "ok": true, "detail": "401"}
+{"id": "delete_no_auth_did_not_delete", "ok": true, "detail": "302"}
+{"id": "delete_2xx", "ok": true, "detail": "204"}
+{"id": "deleted_redirect_404", "ok": true, "detail": "404"}
+{"id": "delete_unknown_404", "ok": true, "detail": "404"}
+{"id": "healthz_not_shadowed", "ok": true, "detail": "create=201 healthz=200"}
+{"id": "persist_custom_after_restart", "ok": true, "detail": "200 {'slug': 'My_custom-1', 'url': 'https://example.com/custom', 'created_at': '2026-11-09T11:22:45Z', 'visits': 32}"}
+{"id": "persist_generated_after_restart", "ok": true, "detail": "302"}
+{"id": "delete_persisted_after_restart", "ok": true, "detail": "404"}

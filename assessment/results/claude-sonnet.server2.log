@@ -1,0 +1,5 @@
+time=2026-11-09T11:22:14.312Z level=INFO msg=listening addr=127.0.0.1:18080 db=<tmpdir>/snip.db
+time=2026-11-09T11:22:14.320Z level=INFO msg=request method=GET path=/healthz status=200
+time=2026-11-09T11:22:14.373Z level=INFO msg=request method=GET path=/api/links/My_custom-1 status=200
+time=2026-11-09T11:22:14.374Z level=INFO msg=request method=GET path=/a8tg1zZZ status=302
+time=2026-11-09T11:22:14.374Z level=INFO msg=request method=GET path=/abc status=404
